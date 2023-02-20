@@ -10,11 +10,11 @@ const options = {
 }
 app.use(express.static("public",options));
 app.get("/", function(req, res){
-	res.sendFile(__dirname+"/Login.java");
+	res.sendFile(__dirname+"/index.html");
 });
 app.listen(port,function(){
 console.log("Server running on https://localhost:"+port);
-console.log("Server running on https://localhost:"${port});
+console.log(`Server running on https://localhost:${port}`);
 });
 //app.get("/weather", function(req, res){
 //	res.sendFile(__dirname+"/weather.html");
