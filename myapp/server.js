@@ -5,7 +5,7 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3010;
 const options = {
-	extensions:['htm','css','html',js','ico','jpg','jpeg','png','svg','pdf'],
+	extensions:['htm','css','html','js','ico','jpg','jpeg','png','svg','pdf'],
 	index:['index.html'],
 }
 app.use(express.static("public",options));
