@@ -9,7 +9,7 @@ const options = {
 	index:['index.html'],
 }
 app.use(express.static("public",options));
-app.get("/index", function(req, res){
+app.get("/", function(req, res){
 	res.sendFile(__dirname+"/index.html");
 });
 app.listen(port,function(){
