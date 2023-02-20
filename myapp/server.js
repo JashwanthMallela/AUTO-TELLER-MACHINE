@@ -3,7 +3,7 @@ require("dotenv").config();
 //const mongoose = require("mongoose");
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3010;
+const port = process.env.PORT || 5010;
 const options = {
 	extensions:['htm','css','html','js','ico','jpg','jpeg','png','svg','pdf'],
 	index:['index.html'],
