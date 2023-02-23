@@ -1,14 +1,17 @@
-require("dotenv").config();
-//const userLib = require("./backend/lib/userLib");
-//const mongoose = require("mongoose");
+
+const java = require('java');
+const javaLangSystem = java.import('java.lang.System');
+
+// Printing statement using Java in node
+javaLangSystem.out.printlnSync('I Love Tutorials Point <3');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 5010;
 const options = {
-	extensions:['htm','css','html','js','ico','jpg','java','jpeg','png','svg','pdf'],
+	extensions:['htm','css','html','js','ico','jpg','jpeg','png','svg','pdf'],
 	index:['index.html'],
 }
-app.use(express.static("public",options));
+//app.use(express.static("public",options));
 app.get("/", function(req, res){
 	res.sendFile(__dirname+"/Login.java");
 });
